@@ -1,0 +1,29 @@
+.restaurants{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.restaurants>h2{
+    margin-bottom: 30px;
+}
+.restaurantContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.restaurantContainer>img{
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 12px;
+}
+.restaurantContainer>img:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

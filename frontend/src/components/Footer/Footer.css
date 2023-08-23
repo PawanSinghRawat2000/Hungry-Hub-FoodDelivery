@@ -1,0 +1,21 @@
+.footer{
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31,41,51);
+    padding-top: 80px;
+    padding-bottom: 30px;
+    color: white;
+    margin-top: 30px;
+}
+.footer>h1{
+    margin-bottom: 20px;
+}
+
+.footer>img{
+    width: 200px;
+    height: 150px;
+}

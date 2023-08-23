@@ -1,0 +1,9 @@
+.homeContainer{
+    width: 100%;
+}
+.homeContainer>img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+}

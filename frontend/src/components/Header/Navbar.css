@@ -1,0 +1,112 @@
+
+  .navContainer {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    border-bottom: 0.6px solid rgb(179, 177, 177);
+    margin-bottom: 300px;
+  }
+  
+  .navLink{
+    text-decoration: none;
+    color:black;
+  }
+  
+  .navContainer > ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+  }
+  .navContainer > ul :last-child{
+      margin-right: 40px;
+  }
+  .navContainer>ul>li{
+      cursor: pointer;
+      align-items: center;
+  }
+  #span{
+      background:  rgb(211, 67, 67);
+      color: white;
+      border-radius: 9999px;
+      padding-left: 6px;
+      padding-right: 6px;
+  }
+
+  
+  #navlogo {
+    display: none;
+  }
+
+  .navdropdown{
+    display:none;
+  }
+  
+  @media only screen and (max-width:750px){
+    .wrapper{
+      position: relative;
+    }
+  
+    .navContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navContainer > ul {
+      display: none;
+    }
+    #navlogo{
+      display: flex;
+      margin-left: 20px;
+      font-size: 24px;
+      font-weight: 600;
+      color: rgba(210, 45, 15, 0.862);
+      text-shadow: 2px 0px;
+    }
+    .navdropdown{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      color: black;
+      margin-top: 30px;   
+      position: relative; 
+    }
+    .navIcon{
+      width: 100%;
+      right: 10px;
+      position: absolute;
+      font-size: medium;
+      color: black;
+    }
+    .navdropdown>ul{
+      margin-top: 30px;
+      list-style: none;
+      width: 100%;
+      background-color: white;
+      opacity: 0.9;
+      text-align: center;
+      z-index: 1;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .listItem{
+      padding: 10px;
+    }
+    .navLink{
+      color: black;
+      font-weight: 600;
+    }
+
+  
+  }
+  
+  
+  
