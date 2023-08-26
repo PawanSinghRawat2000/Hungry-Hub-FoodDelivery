@@ -60,15 +60,20 @@ const foodItemSchema = new mongoose.Schema({
       },
     },
   ],
-//   user: {
-//     type: mongoose.Schema.ObjectId,
-//     ref: "user",
-//     required: true,
-//   },
+  restaurant:{
+    type:mongoose.Schema.ObjectId,
+    ref:'restaurant',
+    required:true,
+  },
+  user: {
+    type: mongoose.Schema.ObjectId,
+    ref: "user",
+    required: true,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
   },
 });
 
-module.exports=mongoose.model("FoodItem",foodItemSchema)
+module.exports=mongoose.model("foodItem",foodItemSchema)
