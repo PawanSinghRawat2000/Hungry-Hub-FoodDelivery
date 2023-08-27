@@ -8,12 +8,18 @@ class ApiFeatures{
 
     search(){
         const keyword=this.queryStr.keyword?{
-            name:{
-                $regex:this.queryStr.keyword,
-                $options:"i",
-            },
+            $or: [
+                { name: { $regex: this.queryStr.keyword, $options: "i" } },
+                { category: { $regex: this.queryStr.keyword, $options: "i" } }
+            ]
         }:{};
         this.query=this.query.find({...keyword});
+        return this;
+    }
+    
+    restaurantFilter(restaurant) {
+        // Assuming the restaurant field in FoodItem model is named 'restaurant'
+        this.query = this.query.where('restaurant', restaurant._id);
         return this;
     }
 
