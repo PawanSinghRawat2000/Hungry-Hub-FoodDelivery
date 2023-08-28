@@ -135,6 +135,7 @@ exports.deleteFoodItem = asyncHandler(async (req, res) => {
 
   //Get FoodItem Details
   exports.getFoodDetails=asyncHandler(async(req,res)=>{
+    console.log(req.params.foodItemId)
     const foodItem=await FoodItem.findById(req.params.foodItemId)
 
     if (!foodItem) {

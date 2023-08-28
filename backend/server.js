@@ -38,6 +38,8 @@ const restaurant=require('./routes/restaurantRoute');
 app.use('/api/v1',restaurant)
 const user=require('./routes/userRoute')
 app.use('/api/v1',user)
+const order=require('./routes/orderRoute')
+app.use('/api/v1',order)
 
 
 
